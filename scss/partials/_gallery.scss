@@ -9,7 +9,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   animation: slideEnter 1.5s ease-in-out;
   .gallery__image {
@@ -17,7 +17,7 @@ h1 {
     flex-flow: column wrap;
     align-items: center;
     max-width: 200px;
-    margin: 10px 0;
+    margin: 10px;
     &:hover {
       cursor: grab;
     }
@@ -89,7 +89,7 @@ h1 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 1d75px 15px;
+      margin: 175px 15px;
       .fa-arrow-left,
       .fa-arrow-right {
         font-size: 55px;
