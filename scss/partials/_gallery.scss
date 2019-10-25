@@ -1,0 +1,127 @@
+h1 {
+  color: #483177;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.gallery__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 1024px;
+  margin: 0 auto;
+  animation: slideEnter 1.5s ease-in-out;
+  .gallery__image {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 200px;
+    margin: 10px 0;
+    &:hover {
+      cursor: grab;
+    }
+    .fa-envelope {
+      font-size: 15px;
+      position: relative;
+      color: #fff;
+      &::before {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        z-index: 2;
+      }
+    }
+    .fa-envelope::after {
+      display: block;
+      content: "";
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #483177;
+      position: absolute;
+      left: 50px;
+      top: 10px;
+      z-index: 1;
+    }
+    img {
+      width: 200px;
+      border-radius: 50%;
+    }
+    p {
+      margin-bottom: 15px;
+      color: #483177;
+    }
+    span {
+      text-align: center;
+      font-size: 0.8em;
+      font-weight: bolder;
+    }
+    .title {
+      color: #54c7de;
+    }
+    .localization {
+      color: #b6b6b6;
+    }
+  }
+  .gallery__details {
+    background: #8ccdd9;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    border-radius: 15px;
+    background-image: url("../img/image.jpg");
+    background-size: cover;
+    .button__close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bolder;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .arrow__box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1d75px 15px;
+      .fa-arrow-left,
+      .fa-arrow-right {
+        font-size: 55px;
+        color: #fff;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .details__box {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed #fff;
+        font-size: 25px;
+        padding: 45px 15px;
+        color: #fff;
+        animation: slideEnter 1.5s ease-in-out;
+        h3,
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
