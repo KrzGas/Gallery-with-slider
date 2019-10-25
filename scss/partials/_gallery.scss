@@ -9,7 +9,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto;
   animation: slideEnter 1.5s ease-in-out;
   .gallery__image {
@@ -17,9 +17,9 @@ h1 {
     flex-flow: column wrap;
     align-items: center;
     max-width: 200px;
-    margin: 10px;
+    margin: 10px 0;
     &:hover {
-      cursor: grab;
+      cursor: pointer;
     }
     .fa-envelope {
       font-size: 15px;

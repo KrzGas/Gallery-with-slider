@@ -15,9 +15,17 @@ body {
 }
 
 #app {
-  height: 100vh;
   background-image: url("../img/bg.png");
   background-repeat: repeat;
+}
+
+.info {
+  font-weight: bolder;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #483177;
+  }
 }
 
 #app {

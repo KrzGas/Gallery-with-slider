@@ -113,6 +113,7 @@ class Gallery extends Component {
             );
           })}
         </div>
+        <p className="info"><a href="https://www.unsplash.com" target="_blank">Photos from Unsplash</a></p>
       </>
     );
   }
